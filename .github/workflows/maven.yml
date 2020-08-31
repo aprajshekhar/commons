@@ -47,7 +47,7 @@ jobs:
           git config --local user.email "revision-updater@redhat.com"
           git config --local user.name "Version Upgrader"
           git commit -m "Version upgrade" -a
-          
+          echo ::set-env name=TAG_NAME::$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
