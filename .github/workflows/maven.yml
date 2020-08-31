@@ -61,6 +61,6 @@ jobs:
           fetch-depth: 0
       - name: output
         run: |
-          echo ${{ env.TAG_NAME }}
+          echo  env.TAG_NAME
     
   
