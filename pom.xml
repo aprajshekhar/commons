@@ -49,7 +49,7 @@
 
         <!-- Github support -->
         <project.scm.id>github</project.scm.id>
-        <git.repository>redhataccess/commons</git.repository>
+        <git.repository>aprajshekhar/commons</git.repository>
     </properties>
 
     <build>
