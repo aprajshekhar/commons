@@ -54,7 +54,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish Jar
-        run: mvn -B release:prepare release:perform
+        run: mvn -B release:prepare -DignoreSnapshots -Dresume=false release:perform
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
