@@ -100,7 +100,7 @@
         <repository>
             <id>github</id>
             <name>GitHub</name>
-            <url>https://maven.pkg.github.com/redhataccess/commons</url>
+            <url>https://maven.pkg.github.com/aprajshekhar/commons</url>
         </repository>
     </distributionManagement>
 
