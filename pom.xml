@@ -46,6 +46,9 @@
         <!-- Testing support -->
         <junit_junit>4.13</junit_junit>
         <org.mockito_mockito-all>2.0.2-beta</org.mockito_mockito-all>
+
+        <!-- Github support -->
+        <project.scm.id>github</project.scm.id>
     </properties>
 
     <build>
@@ -88,6 +91,16 @@
             </plugin>
         </plugins>
     </build>
+
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub</name>
+            <url>https://maven.pkg.github.com/redhataccess/commons</url>
+        </repository>
+    </distributionManagement>
+
 
     <dependencies>
         <!-- External library support -->
